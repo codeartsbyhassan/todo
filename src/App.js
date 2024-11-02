@@ -69,12 +69,17 @@ function App() {
         ))}
       </ul>
       {todos.length >= itemsPerPage && (
-        <div className="pagination">
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button key={index + 1} onClick={() => handlePageChange(index + 1)} className={`page-button ${currentPage === index + 1 ? 'active' : ''}`}>
-              {index + 1}
-            </button>
-          ))}
+        <div className="pagination-container">
+          <div className="pagination">
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button key={index + 1} onClick={() => handlePageChange(index + 1)} className={`page-button ${currentPage === index + 1 ? 'active' : ''}`}>
+                {index + 1}
+              </button>
+            ))}
+          </div>
+          <div className="pagination-info">
+            Showing {currentTodos.length} of {todos.length} tasks
+          </div>
         </div>
       )}
     </div>
