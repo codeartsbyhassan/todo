@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import logo from './assets/images/logo.png';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={logo} className='logo' alt="Logo" />
       <h1 className='main-heading'>Todo List</h1>
       <input
         type="text"

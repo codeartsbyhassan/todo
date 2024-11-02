@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aptos:wght@300;400;600&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f9;
+  font-family: 'Aptos', sans-serif; /* Use Aptos font */
+  background-color: #f4f4f9; /* Light background for contrast */
 }
 
 .App {
@@ -13,11 +13,11 @@ body {
   margin: 50px auto;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  background-color: #ffffff; /* White background for the app */
 }
 
 h1 {
-  color: #800020;
+  color: #36454F; /* Charcoal Gray for headings */
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 24px;
@@ -25,7 +25,7 @@ h1 {
 
 input {
   padding: 10px;
-  border: 2px solid #800020;
+  border: 2px solid #36454F; /* Charcoal Gray border */
   border-radius: 4px;
   outline: none;
   transition: border-color 0.3s;
@@ -35,7 +35,7 @@ input {
 }
 
 input:focus {
-  border-color: #600015;
+  border-color: #2b2b2b; /* Darker Charcoal Gray on focus */
 }
 
 button {
@@ -43,7 +43,7 @@ button {
   margin-left: 10px;
   border: none;
   border-radius: 4px;
-  background-color: #800020;
+  background-color: #36454F; /* Charcoal Gray background */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-  background-color: #600015;
+  background-color: #2b2b2b; /* Darker Charcoal Gray on hover */
 }
 
 ul {
@@ -66,22 +66,22 @@ li {
   align-items: center;
   padding: 10px;
   margin: 10px 0;
-  background-color: #f0d4d4;
+  background-color: #e7e7e7; /* Light gray background for items */
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
 }
 
 li:hover {
-  background-color: #e0b2b2;
+  background-color: #d0d0d0; /* Darker gray on hover */
 }
 
 li button {
-  background-color: #dc3545;
+  background-color: #dc3545; /* Red for delete buttons */
 }
 
 li button:hover {
-  background-color: #c82333;
+  background-color: #c82333; /* Darker red on hover */
 }
 
 .completed {
@@ -90,7 +90,7 @@ li button:hover {
 }
 
 .check-buttons {
-  background-color: rgb(40, 167, 69);
+  background-color: rgb(40, 167, 69); /* Green for check buttons */
   color: white;
   border: none;
   border-radius: 4px;
@@ -100,25 +100,8 @@ li button:hover {
 }
 
 .check-buttons:hover {
-  background-color: rgb(60, 180, 90);
+  background-color: rgb(60, 180, 90); /* Lighter green on hover */
   color: navy;
-}
-
-.todo-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-}
-
-.todo-item strong {
-  margin-right: 10px;
-}
-
-.todo-item .todo-text {
-  flex-grow: 1;
 }
 
 .pagination {
@@ -130,7 +113,7 @@ li button:hover {
 .page-button {
   margin: 0 5px;
   padding: 10px 15px;
-  background-color: #800020;
+  background-color: #36454F; /* Charcoal Gray for pagination buttons */
   color: white;
   border: none;
   border-radius: 4px;
@@ -139,11 +122,11 @@ li button:hover {
 }
 
 .page-button:hover {
-  background-color: #600015;
+  background-color: #2b2b2b; /* Darker Charcoal Gray on hover */
 }
 
 .page-button.active {
-  background-color: #600015;
+  background-color: #2b2b2b; /* Active button color */
 }
 
 .main-heading {
@@ -165,4 +148,9 @@ li button:hover {
 
 .pagination {
   display: flex;
+}
+
+.logo {
+  width: 16%;
+  height: 14%;
 }
