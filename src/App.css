@@ -17,14 +17,15 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: #800020;
   margin-bottom: 20px;
   font-weight: 600;
+  font-size: 24px;
 }
 
 input {
   padding: 10px;
-  border: 2px solid #007bff;
+  border: 2px solid #800020;
   border-radius: 4px;
   outline: none;
   transition: border-color 0.3s;
@@ -32,7 +33,7 @@ input {
 }
 
 input:focus {
-  border-color: #0056b3;
+  border-color: #600015;
 }
 
 button {
@@ -40,7 +41,7 @@ button {
   margin-left: 10px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #800020;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -48,7 +49,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #600015;
 }
 
 ul {
@@ -63,14 +64,14 @@ li {
   align-items: center;
   padding: 10px;
   margin: 10px 0;
-  background-color: #e7f1ff;
+  background-color: #f0d4d4;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
 }
 
 li:hover {
-  background-color: #d0e3ff;
+  background-color: #e0b2b2;
 }
 
 li button {
@@ -107,9 +108,7 @@ li button:hover {
   justify-content: space-between;
   padding: 10px;
   border-bottom: 1px solid #ccc;
-  text-align: left; /* Ensure text is left-aligned */
-  padding: 10px; /* Optional: add some padding */
-  border-bottom: 1px solid #ccc;
+  text-align: left;
 }
 
 .todo-item strong {
@@ -118,4 +117,33 @@ li button:hover {
 
 .todo-item .todo-text {
   flex-grow: 1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  background-color: #800020;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-button:hover {
+  background-color: #600015;
+}
+
+.page-button.active {
+  background-color: #600015;
+}
+
+.main-heading{
+  font-size:26pt;
 }
