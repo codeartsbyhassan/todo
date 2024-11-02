@@ -43,10 +43,15 @@ function App() {
       <ul>
         {todos.map((todo, index) => (
           <li key={index} className={todo.completed ? 'completed' : ''}>
-            <strong>{index+1}. </strong> {todo.text}
+            <strong>{index + 1}.</strong>
+            <span className="todo-text">{todo.text}</span>
             <div>
-              <button onClick={() => toggleTodo(index)}>Mark as read</button>
-              <button onClick={() => deleteTodo(index)}>Delete</button>
+              <button onClick={() => toggleTodo(index)} class="check-buttons">
+                {todo.completed ? <i className="fas fa-undo"></i> : <i className="fas fa-check"></i>}
+              </button>
+              <button onClick={() => deleteTodo(index)}>
+                <i className="fas fa-trash"></i>
+              </button>
             </div>
           </li>
         ))}
